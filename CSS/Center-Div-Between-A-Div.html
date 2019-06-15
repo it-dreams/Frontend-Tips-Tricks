@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>Element selector</title>
+	
+	<!-- jquery file included -->
+	<script src="../jquery-3.4.1.js"></script>
+	<style>
+		 .div1{
+		 	border:  1px solid#555;
+		 	background: #ff00aa;
+		 	width: 800px;
+		 	height: 500px;
+		 	position: absolute;
+		 	top: 50%;
+		 	left:  50%;
+		 	transform: translate(-50%, -50%)
+
+		 }
+		 .div2{		 	
+		 	background: #fff;
+		 	height: 200px;
+		 	width: 300px;
+		 	border:  1px solid#ccc;
+		 	text-align: center;
+		 	display: center;
+		 	position: relative;
+		 	top: 50%;
+		 	left:  50%;
+		 	transform: translate(-50%, -50%)
+		 }
+	</style>
+</head>
+<body>
+	<div class="div1">
+		<div class="div2">
+			<p>Hello WOrld</p>
+		</div>
+	</div>	
+</body>
+</html>
