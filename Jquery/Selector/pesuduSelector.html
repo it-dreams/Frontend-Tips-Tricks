@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>Element selector</title>
+	
+	<!-- jquery file included -->
+	<script src="../jquery-3.4.1.js"></script>
+</head>
+<body>	
+	<table border="2" width="300">
+		<thead>
+			<tr>
+				<th>Id</th>
+				<th>Name</th>
+				<th>Email</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr>
+				<td>1</td>
+				<td>Rahul</td>
+				<td>Rahul@gmail.com</td>
+			</tr>
+			<tr>
+				<td>1</td>
+				<td>Rahul</td>
+				<td>Rahul@gmail.com</td>
+			</tr>
+			<tr>
+				<td>1</td>
+				<td>Rahul</td>
+				<td>Rahul@gmail.com</td>
+			</tr>
+			<tr>
+				<td>1</td>
+				<td>Rahul</td>
+				<td>Rahul@gmail.com</td>
+			</tr>
+			<tr>
+				<td>1</td>
+				<td>Rahul</td>
+				<td>Rahul@gmail.com</td>
+			</tr>
+		</tbody>
+	</table>
+	<button type="button">Click</button>
+
+	<!-- Jquery code here -->
+	<script>
+		$(document).ready(function(){
+			$('button').click(function(){
+				$('td:even').css('background','red');
+			});
+		});
+	</script>
+</body>
+</html>
+
+<!-- Input Type Selecter are:
+
+:active
+:focus
+:first
+:last
+:even
+:odd
+:first-child
+:last-child
+:only-child
+:nth-child(n)
+:nth-last-child(n)
+etc -->

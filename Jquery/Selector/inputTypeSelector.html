@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>Element selector</title>
+	
+	<!-- jquery file included -->
+	<script src="../jquery-3.4.1.js"></script>
+</head>
+<body>	
+	<button type="button" id="hide">Hide/Show</button>
+
+	<!-- Jquery code here -->
+	<script>
+		$(document).ready(function(){
+			$('button').click(function(){
+				$(':button').css('background','red');
+			});
+		});
+	</script>
+</body>
+</html>
+
+<!-- Input Type Selecter are:
+
+:button
+:type
+:password
+:submit
+:email
+:file
+etc -->

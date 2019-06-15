@@ -1,0 +1,51 @@
+<!-- Display Effects
+----------------
+hide()
+show()
+toggle() -->
+
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>Display Effects</title>
+	
+	<!-- jquery file included -->
+	<script src="../jquery-3.4.1.js"></script>
+	<style>
+		 .div1{
+		 	border:  1px;
+		 	padding: 20px;
+		 	maigin: 10px;
+		 	text-align: center;
+		 	background: #ccc;
+		 	border: 1px solid#111;
+		 }
+	</style>
+</head>
+<body>
+	<h1 class="div1">Heading</h1>	
+
+	<button type="button" id="show">Show</button>
+	<button type="button" id="hide">Hide</button>
+	<button type="button" id="toggle">Toggle</button>
+
+	<!-- Jquery code here -->
+	<script>
+		$(document).ready(function(){
+			$('#show').click(function(){
+				$('.div1').show(2000);
+			});
+
+			$('#hide').click(function(){
+				$('.div1').hide(2000);
+			});
+
+			$('#toggle').click(function(){
+				$('.div1').toggle(2000);
+			});
+		});
+	</script>
+</body>
+</html>

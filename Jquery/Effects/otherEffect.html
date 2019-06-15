@@ -1,0 +1,65 @@
+<!-- Other Effects
+---------------------
+animate()
+delay()
+queue()
+clearQueue()
+dequeue()
+finish()
+stop() -->
+
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>Display Effects</title>
+	
+	<!-- jquery file included -->
+	<script src="../jquery-3.4.1.js"></script>
+	<style>
+		 .div1{
+		 	padding: 20px;
+		 	width: 100px;
+		 	height: 100px;
+		 	text-align: center;
+		 	background: #125f21;
+		 	border: 1px solid#111;
+		 	position: absolute;
+		 	left: 10px;
+		 }
+		 .div2{
+		 	padding: 20px;
+		 	width: 100px;
+		 	height: 100px;
+		 	text-align: center;
+		 	background: #125f21;
+		 	border: 1px solid#111;
+		 	position: absolute;
+		 	left: 200px;
+		 }
+	</style>
+</head>
+<body>
+	<div class="div1"></div>	
+	<div class="div2"></div>	
+
+	<!-- Jquery code here -->
+	<script>
+		$(document).ready(function(){
+			$('.div1').click(function(){
+				$('.div1').animate({
+					left:'250px',
+					opacity:'0.5',
+					height:'350px',
+					width:'350px'
+				});
+			});
+
+			$('.div2').click(function(){
+				$('.div2').delay("slow") .fadeTo(1000, 0.3);
+			});
+		});
+	</script>
+</body>
+</html>

@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>Event Handling</title>
+	
+	<!-- jquery file included -->
+	<script src="../jquery-3.4.1.js"></script>
+	<style>  
+	  p {  
+	    background: yellow;  
+	    font-weight: bold;  
+	    cursor: pointer;  
+	    padding: 5px;  
+	  }  
+	  p.over {  
+	    background: #ccc;  
+	  }  
+	  span {  
+	    color: red;  
+	  }  
+	</style>
+</head>
+<body>	
+	
+	<img src="https://images.pexels.com/photos/248797/pexels-photo-248797.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500" alt="good morning">
+
+	<p>This is a single paragraph. Click me for next.</p>  
+
+	<!-- Jquery code here -->
+	<script>
+		$(document).ready(function(){
+			$(document).ready(function(){  
+			    $("img").load(function(){  
+			        alert("Image loaded.");  
+			    });  
+			}); 
+
+			$( "body" ).delegate( "p", "click", function() {  
+			  $(this ).after( "<p>Click me for another paragraph.</p>" );  
+			}); 
+		});
+	</script>
+</body>
+</html>
+
+
+
+<!-- Document/Window Events
+----------------------
+load
+unload
+resize
+scroll 
+delegate-->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>Event Handling</title>
+	
+	<!-- jquery file included -->
+	<script src="../jquery-3.4.1.js"></script>
+</head>
+<body>	
+	
+	<button type="button" id="click">Click</button>
+	<button type="button" id="dblclick">Double Click</button>
+	<button type="button" id="mouseenter">Mouse Enter</button>
+	<button type="button" id="mouseleave">Mouse Leave</button>
+
+	<!-- Jquery code here -->
+	<script>
+		$(document).ready(function(){
+			$('#click').click(function(){
+				alert('This is a click event');
+			});
+
+			$('#dblclick').dblclick(function(){
+				alert('This is a double click event');
+			});
+
+			$('#mouseenter').mouseenter(function(){
+				alert('This is a Mouse Enter event');
+			});
+
+			$('#mouseleave').mouseleave(function(){
+				alert('This is a Mouse Leave event');
+			});
+		});
+	</script>
+</body>
+</html>
+
+
+
+<!-- Mouse Events	
+----------------------
+click
+dblclick
+mouseenter
+mouseleave
+mouseout
+mouseover
+hover
+on ==> It is use for multiple event handeling in a one component
+-->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

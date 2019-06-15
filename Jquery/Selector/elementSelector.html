@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>Element selector</title>
+	
+	<!-- jquery file included -->
+	<script src="../jquery-3.4.1.js"></script>
+</head>
+<body>
+	<h1>Hello Element selector</h1>	
+	<p>This is the p tag</p>
+
+
+	<!-- Jquery code here -->
+	<script>
+		$(document).ready(function(){
+			$('h1').click(function(){
+				$(this).hide(2000);
+			});
+
+			$('p').css('background','red') .fadeOut(2000);
+		});
+	</script>
+</body>
+</html>

@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>Event Handling</title>
+	
+	<!-- jquery file included -->
+	<script src="../jquery-3.4.1.js"></script>
+</head>
+<body>		
+	<from>
+		Name: <input type="text" name="fullname"><br>
+		Email: <input type="text" name="email"><br/>
+		<select name="actor" id="actor">			
+			<option>---- ----</option>
+			<option>Uthappa</option>
+			<option>Kattappa</option>
+			<option>Veerappa</option>
+			<option>Bahubali</option>
+			<option>Bhallal Dev</option>
+			<option>Awantika</option>
+		</select>
+		<span id="loc"></span>
+	</from>
+	<!-- Jquery code here -->	
+	<script>
+	$(document).ready(function(){
+	  $("input").focus(function(){
+	    $(this).css("background-color", "#cccccc");
+	  });
+	  $("input").blur(function(){
+	    $(this).css("background-color", "#ffccaa");
+	  });
+	  $('select').change(function(){
+	  	document.getElementById("loc").innerHTML="You selected: " +document.getElementById('actor').value;
+	  })
+	});
+	</script>
+</body>
+</html>
+
+
+
+<!-- Form Events	
+----------------------
+submit
+change
+focus
+blur -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

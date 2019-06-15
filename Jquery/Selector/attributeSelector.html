@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>Attribute selector</title>
+	
+	<!-- jquery file included -->
+	<script src="../jquery-3.4.1.js"></script>
+</head>
+<body>	
+	
+	<a href="https://facebook.com" alt="Facebook">Facebook</a>
+	<a href="https://www.google.com/" alt="googgle" target="_blank">Google</a>
+		<br/>
+	<button type="button">Click</button>
+
+	<!-- Jquery code here -->
+	<script>
+		$(document).ready(function(){
+			$('button').click(function(){
+				$("[target='_blank']").hide() .css('textDecoration','none');
+			});
+		});
+	</script>
+</body>
+</html>
